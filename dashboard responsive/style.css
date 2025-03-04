@@ -1,0 +1,190 @@
+/* === Reset and Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  background: rgb(4, 13, 33);
+}
+
+/* === Sidebar Menu === */
+.menu {
+  width: 60px;
+  height: 100vh;
+  background-color: #262530;
+  padding: 20px;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+
+.menu:hover {
+  width: 260px;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  height: 95%;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+
+ul li a:hover,
+ul li a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+ul li a i {
+  font-size: 24px;
+}
+
+/* === Profile Section === */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  flex-shrink: 0;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+.profile h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+/* === Logout Button === */
+.log-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.log-out a {
+  background-color: #a00;
+}
+
+/* === Main Content === */
+.content {
+  width: 100%;
+  margin: 10px;
+}
+
+/* === Title Info === */
+.title-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: #0481ff;
+}
+
+/* === Data Boxes === */
+.data-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.data-info .box {
+  flex: 1 1 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  background-color: #123;
+  transition: transform 0.3s;
+}
+
+.data-info .box:hover {
+  transform: translateY(-5px);
+}
+
+.data-info .box i {
+  font-size: 40px;
+}
+
+.data-info .box .data {
+  text-align: center;
+}
+
+.data-info .box .data span {
+  font-size: 30px;
+}
+
+/* === Table Styles === */
+table {
+  width: 100%;
+  border-spacing: 8px;
+  text-align: center;
+}
+
+th,
+td {
+  height: 40px;
+  border-radius: 8px;
+  background-color: #123;
+}
+
+th {
+  background-color: #0080ff;
+}
+
+/* === Price and Count === */
+.price,
+.count {
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.price {
+  background-color: green;
+}
+
+.count {
+  background-color: gold;
+  color: black;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .menu:hover {
+    width: 100%;
+  }
+
+  .profile {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .data-info .box {
+    flex-basis: 100%;
+  }
+}

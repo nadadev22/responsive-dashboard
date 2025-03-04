@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Sidebar Menu -->
+    <div class="menu">
+      <ul>
+        <li class="profile">
+          <div class="img-box">
+            <img
+              src="054e4b77-9685-4565-a4fe-7432cff7f4d6-1024x1024.webp"
+              alt="profile"
+            />
+          </div>
+          <h2>nada-al-dev</h2>
+        </li>
+
+        <li>
+          <a class="active" href="#"
+            ><i class="fas fa-home"></i>
+            <p>Dashboard</p></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-user-group"></i>
+            <p>Clients</p></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-table"></i>
+            <p>Products</p></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-chart-pie"></i>
+            <p>Charts</p></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-pen"></i>
+            <p>Posts</p></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-star"></i>
+            <p>Favorites</p></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-cog"></i>
+            <p>Settings</p></a
+          >
+        </li>
+
+        <li class="log-out">
+          <a href="#"
+            ><i class="fas fa-sign-out-alt"></i>
+            <p>Log Out</p></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="title-info">
+        <p>Dashboard Overview</p>
+        <i class="fas fa-chart-bar"></i>
+      </div>
+
+      <!-- Data Boxes -->
+      <div class="data-info">
+        <div class="box">
+          <i class="fas fa-user"></i>
+          <div class="data">
+            <p>Users</p>
+            <span>100</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-pen"></i>
+          <div class="data">
+            <p>Posts</p>
+            <span>800</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-table"></i>
+          <div class="data">
+            <p>Products</p>
+            <span>590</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-dollar-sign"></i>
+          <div class="data">
+            <p>Revenue</p>
+            <span>104$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Table -->
+      <div class="title-info">
+        <p>Products</p>
+        <i class="fas fa-table"></i>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>TV</td>
+            <td><span class="price">$122</span></td>
+            <td><span class="count">655</span></td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td><span class="price">$800</span></td>
+            <td><span class="count">120</span></td>
+          </tr>
+          <tr>
+            <td>Laptop</td>
+            <td><span class="price">$1500</span></td>
+            <td><span class="count">45</span></td>
+          </tr>
+          <tr>
+            <td>Tablet</td>
+            <td><span class="price">$500</span></td>
+            <td><span class="count">230</span></td>
+          </tr>
+          <tr>
+            <td>Headphones</td>
+            <td><span class="price">$90</span></td>
+            <td><span class="count">1000</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
